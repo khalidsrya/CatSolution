@@ -24,7 +24,7 @@ class AppBar extends HTMLElement {
                     <a class="nav-item nav-link" href="#/home">Beranda</a>
                     <a class="nav-item nav-link" href="#/article">Artikel</a>
                     <a class="nav-item nav-link" href="#/about">Tentang Kami</a>
-                    <a class="nav-item btn" href="#">Hubungi Kami</a>
+                    <a class="nav-item btn" href="#/services">Service</a>
                   </div>
                 </div>
               </div>
@@ -40,7 +40,7 @@ class AppBar extends HTMLElement {
                     <a class="nav-link" href="#/about">Tentang Kami</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Hubungi Kami</a>
+                    <a class="nav-link" href="#/services">Service</a>
                   </li>
                 </ul>
               </div>  

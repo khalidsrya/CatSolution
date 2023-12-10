@@ -1,3 +1,5 @@
+
+
 const homePage = () => `
 <!-- Jumbotron -->
 <div class="jumbotron jumbotron-fluid">
@@ -80,7 +82,7 @@ const aboutPage = () => `
       <div class="about-us">
         <div class="container">
           <div class="row">
-            <div class="col-md-7 about-desc" data-aos="fade-right" data-aos-duration="2000">
+            <div class="col-md-7 about-desc" >
               <h1 class="area-title">Cat Solution</h1>
               <p class="about-desc">
                 Cat Solution menyediakan berbagai artikel menarik tentang kucing
@@ -97,7 +99,7 @@ const aboutPage = () => `
                 membantu pemilik kucing dalam memenuhi kebutuhan kucing.
               </p>
             </div>
-            <div class="col-md" data-aos="fade-left" data-aos-duration="2000">
+            <div class="col-md" >
               <img
                 src="../image/image8.png"
                 class="img-fluid content-aboutImg mx-auto d-block"
@@ -108,7 +110,7 @@ const aboutPage = () => `
         </div>
       </div>
 
-      <div id="team" class="team" data-aos="fade-up" data-aos-duration="2000">
+      <div id="team" class="team" >
         <div class="container">
           <div class="row justify-content-center team-title">
             <div class="col-lg-10">
@@ -177,22 +179,22 @@ const createInterestArticleContent = () => `
         <p class="info">Konten Menarik</p>
         <h1 class="area-title">Waktu & Tips Memandikan Kucing</h1>
         <p class="about-info lead mb-4">Seperti yang kita ketahui, kucing bisa membersihkan tubuhnya sendiri. Terkadang, hal tersebut sudah cukup, namun untuk beberapa kondisi, Anda perlu memandikan kucing karena noda atau kotoran yang tidak bisa mereka bersihkan sendiri. Ideal...</p>
-        <a class="nav-item button-about btn" href="#/detail/03">Selengkapnya</a>
+        <a class="nav-item button-about btn" href="#/detail/3">Selengkapnya</a>
     </div>
     <div class="col">
-    <img class="about-img img-fluid mx-auto d-block interest-img" src="https://i.postimg.cc/DZp1X72t/Article04.png" alt="" data-aos="fade-left" data-aos-duration="2000">
+    <img class="about-img img-fluid mx-auto d-block interest-img" src="https://asset.kompas.com/crops/LQSUbc40bh5Ve3c7e6gIvnCA4oU=/83x0:933x567/750x500/data/photo/2021/03/27/605f0eee79aaa.jpg" alt="" data-aos="fade-left" data-aos-duration="2000">
   </div>
 </div>
 
 <div class="row justify-content-center ">
    <div class="col">
-      <img class="about-img img-fluid  interest-img" src="https://i.postimg.cc/qRx0SMRS/Article06.png" alt="" data-aos="fade-right" data-aos-duration="2000">
+      <img class="about-img img-fluid  interest-img" src="https://www.purina.co.id/sites/default/files/2023-01/14%20Fakta%20Tentang%20Kucing%20yang%20Unik%20dan%20Menarik%20copy.jpg" alt="" data-aos="fade-right" data-aos-duration="2000">
     </div>
      <div class="col about-us" data-aos="fade-left" data-aos-duration="2000">
         <p class="info">Konten Menarik</p>
         <h1 class="area-title">Beberapa Fakta Unik Tentang Kucing</h1>
         <p class="about-info lead mb-4">Beberapa orang meyakini kucing merupakan salah satu hewan yang dapat meredakan stres ataupun mengurangi ketegangan sehabis melakukan pekerjaan. Jika diperhatikan kucing cenderung suka bermalas-malasan seperti halnya...</p>
-        <a class="nav-item button-about btn" href="#/detail/06">Selengkapnya</a>
+        <a class="nav-item button-about btn" href="#/detail/6">Selengkapnya</a>
     </div>
     
 </div>
@@ -216,12 +218,39 @@ const searchBar = () => `
   </span>
 </div>
 </div>
-`
+`;
+
+const services = () => `
+  <div class="container p-lg-5 rounded">
+    <h1 class="card-services">Hubungi kami</h1>
+    <form id="emailForm">
+      <div class="form-group">
+        <label for="email-input" class="card-servicess">Email address</label>
+        <input type="email" class="form-control form-control-sm col-5 mx-auto bg-gray rounded" id="email" aria-describedby="email" placeholder="Enter email">
+        <small id="email-validation-message" class="form-text text-danger"></small>
+      </div>
+      <div class="form-group">
+        <label for="name" class="card-servicess col-md-3">Your Name</label>
+        <input type="text" class="form-control col-md-3 mx-auto bg-gray rounded" id="name" placeholder="Your Name" >
+        <small id="name-validation-message" class="form-text text-danger"></small>
+      </div>
+      <br>
+      <div class="form-group">
+        <textarea rows="6" cols="45" placeholder="Enter Your Message" id="message" ></textarea>
+        <small id="message-validation-message" class="form-text text-danger"></small>
+      </div>
+      <button type="button" class="btn btn-primary" id="submit-button">Submit</button>
+    </form>
+  </div>
+`;
+
+
 export {
     homePage,
     searchBar,
     aboutPage,
     createArticleItemTemplate,
     createArticleDetailTemplate,
-    createInterestArticleContent
+    createInterestArticleContent,
+    services
 };

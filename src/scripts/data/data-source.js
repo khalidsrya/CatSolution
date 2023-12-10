@@ -7,7 +7,9 @@ class DataSource {
             if (filterArticle.length) {
                 resolve(filterArticle);
             } else {
-                reject(`${keyword} is not found`);
+                const errorMessage = `${keyword} is not found`;
+                alert(errorMessage); // Tambahkan perintah alert di sini
+                reject(errorMessage);
             }
         });
     }

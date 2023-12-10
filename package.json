@@ -38,7 +38,10 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "bootstrap": "^5.0.2",
+    "emailjs-com": "^3.2.0",
+    "idb": "^7.1.1",
     "regenerator-runtime": "^0.13.11",
     "swiper": "^9.3.2"
   }
