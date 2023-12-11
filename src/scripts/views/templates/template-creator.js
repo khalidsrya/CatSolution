@@ -221,22 +221,22 @@ const searchBar = () => `
 `;
 
 const services = () => `
-  <div class="container p-lg-5 rounded">
+  <div class="container p-lg-5 d-flex flex-column align-items-center">
     <h1 class="card-services">Hubungi kami</h1>
-    <form id="emailForm">
+    <form id="emailForm" class="text-center">
       <div class="form-group">
-        <label for="email-input" class="card-servicess">Email address</label>
+        <label for="email-input" class="card-servicess pb-3">Email address</label>
         <input type="email" class="form-control form-control-sm col-5 mx-auto bg-gray rounded" id="email" aria-describedby="email" placeholder="Enter email">
         <small id="email-validation-message" class="form-text text-danger"></small>
       </div>
       <div class="form-group">
-        <label for="name" class="card-servicess col-md-3">Your Name</label>
-        <input type="text" class="form-control col-md-3 mx-auto bg-gray rounded" id="name" placeholder="Your Name" >
+        <label for="name" class="card-servicess col-md-3 text-left pt-2 pb-3">Your Name</label>
+        <input type="text" class="form-control col-md-3 mx-auto bg-gray rounded" id="name" placeholder="Your Name">
         <small id="name-validation-message" class="form-text text-danger"></small>
       </div>
       <br>
       <div class="form-group">
-        <textarea rows="6" cols="45" placeholder="Enter Your Message" id="message" ></textarea>
+        <textarea class="border-0" rows="12" cols="45" placeholder="Enter Your Message" id="message"></textarea>
         <small id="message-validation-message" class="form-text text-danger"></small>
       </div>
       <button type="button" class="btn btn-primary" id="submit-button">Submit</button>
